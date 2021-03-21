@@ -19,6 +19,7 @@ public class MyPathHandler implements HttpHandler
 
         httpExchange.sendResponseHeaders(200, response.length());
         OutputStream os = httpExchange.getResponseBody();
+        System.out.println("Unnecessary changegit");
         os.write(response.toString().getBytes());
         os.close();
     }
